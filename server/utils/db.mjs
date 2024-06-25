@@ -1,10 +1,11 @@
 // Create PostgreSQL Connection Pool here !
 import * as pg from "pg";
+import "dontenv/config";
 const { Pool } = pg.default;
 
 const connectionPool = new Pool({
   connectionString:
-    "postgresql://your-db-username:your-db-password@localhost:5432/your-db-name",
+    "postgresql://postgres:Kingtrain0$@localhost:5432/crdu_data_api",
 });
 
 export default connectionPool;
